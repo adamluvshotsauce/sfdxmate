@@ -31,7 +31,7 @@ export class Command {
             `cd "${rootPath}" && ${cmd}`,
             (err, stdout, stderr) => {
                 if (err) {
-                    Editor.showOutput(stderr);
+                    Editor.showOutput(stdout);
 
                 } else {
                     Editor.showOutput(stdout, true);
